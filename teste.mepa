@@ -1,0 +1,33 @@
+    INPP
+    AMEM 3
+
+    LEIT
+    ARMZ 0
+
+    CRVL 0
+    CRCT 2
+    MULT
+    ARMZ 1
+
+    CRVL 1
+    CRCT 10
+    CM
+    DSVF L1     |       JZ L1
+
+    CRVL 1
+    CRCT 3
+    MULT
+    ARMZ 2
+
+    IMPR
+
+    DSVS FIM    |       JMP FIM
+
+L1  CRVL 0
+    CRVL 1
+    SOMA
+    ARMZ 2
+
+    IMPR
+
+FIM

@@ -1,18 +1,18 @@
 program teste;
 
-var a,b,c : integer;
+var a1,b2,c3 : integer;
 
 begin
-    read(a);
-    b:=a*2;
-    if (b > 10)
+    read(a1);
+    b2:=a1*2;
+    if (b2 > 10)
         begin
-            c:=b*3;
-            write(c);
+            c3:=b2*3;
+            write(c3);
         end
     else
         begin
-            c:=a+b;
-            write(c);
+            c3:=a1+b2;
+            write(c3);
         end;
 end.

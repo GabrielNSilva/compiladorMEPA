@@ -14,6 +14,8 @@ def lex_split(line, ln):
             lexemas.append({'line': ln, 'token': token, 'type': 'palavra_reservada'})
         elif token in listaSE:
             lexemas.append({'line': ln, 'token': token, 'type': 'simbolo_especial'})
+        elif token.isnumeric():
+            lexemas.append({'line': ln, 'token': token, 'type': 'constante'})
         else:
             lexemas.append({'line': ln, 'token': token, 'type': 'identificador'})
 
@@ -27,8 +29,8 @@ def split_file(path):
         ln = 0
         for line in f:
             ln += 1
-            print(line)
+            # print(line)
             lex_split(line, ln)
-        lex_print()
+        # lex_print()
     
     return lexemas

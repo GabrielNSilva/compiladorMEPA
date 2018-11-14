@@ -1,6 +1,7 @@
 program teste;
 
-var a1,b2,c3 : integer;
+var 
+    a1,b2,c3 : integer;
 
 begin
     read(a1);
